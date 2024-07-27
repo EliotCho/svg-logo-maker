@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { circle, square, triangle } = require("./lib/shapes");
 
 const svgGen = ({ name, nameColor, shape, shapeColor }) =>
   // Template for the svg logo file
@@ -12,6 +13,12 @@ inquirer
       type: "input",
       name: "name",
       message: "What is the name of your logo (max 3 characters)?",
+      validate: (input) => {
+        if (input.length > 3) {
+          return "Please enter a name with 3 characters or less";
+        }
+        return true;
+      },
     },
     {
       // color can be hex, rgb, or color name
