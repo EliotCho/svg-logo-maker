@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { circle, square, triangle } = require("./lib/shapes");
+const shapes = require("./lib/shapes");
 
 const svgGen = ({ name, nameColor, shape, shapeColor }) =>
   // Template for the svg logo file
