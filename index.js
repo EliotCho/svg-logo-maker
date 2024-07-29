@@ -49,9 +49,12 @@ inquirer
     const logoName = answers.name;
     let fileName = `${logoShape}_${logoName}.svg`;
 
-    
-    const shape = new shapes();
-    answers.shape = shape[answers.shape](answers.shapeColor);
+    const shape = new shapes(
+      answers.name,
+      answers.nameColor,
+      answers.shapeColor
+    );
+    answers.shape = shape[answers.shape]();
 
     // generate the README file is created as a variable
     const svgLogo = svgGen(answers);
