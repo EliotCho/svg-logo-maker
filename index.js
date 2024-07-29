@@ -4,7 +4,7 @@ const shapes = require("./lib/shapes");
 
 const svgGen = ({ name, nameColor, shape, shapeColor }) =>
   // Template for the svg logo file
-  ``;
+  `${shape}`;
 
 // Inquirer prompt where the inputs are collected
 inquirer
@@ -41,13 +41,22 @@ inquirer
   ])
 
   .then((answers) => {
+    // check if answers are collected
     console.log(answers);
+
+    // create new file name
+    const logoShape = answers.shape;
+    const logoName = answers.name;
+    let fileName = `${logoShape}_${logoName}.svg`;
+
+    
+    const shape = new shapes();
+    answers.shape = shape[answers.shape](answers.shapeColor);
 
     // generate the README file is created as a variable
     const svgLogo = svgGen(answers);
-    let fileName = shape + logo + ".svg";
     // write the README file
-    fs.writeFile("readmeGenerated.md", svgLogo, (err) =>
+    fs.writeFile(fileName, svgLogo, (err) =>
       err ? console.error(err) : console.log("SVG Logo Generated!")
     );
   });
