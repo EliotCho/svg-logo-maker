@@ -24,7 +24,8 @@ inquirer
       // color can be hex, rgb, or color name
       type: "input",
       name: "nameColor",
-      message: "What color do you want your logo name to be?",
+      message:
+        "What color do you want your logo name to be? (color keyword OR a hexadecimal number)",
     },
     {
       type: "list",
@@ -36,7 +37,8 @@ inquirer
       // color can be hex, rgb, or color name
       type: "input",
       name: "shapeColor",
-      message: "What color do you want your logo shape to be?",
+      message:
+        "What color do you want your logo shape to be? (color keyword OR a hexadecimal number)",
     },
   ])
 
