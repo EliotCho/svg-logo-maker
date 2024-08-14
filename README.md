@@ -22,7 +22,7 @@
 <a href="#tests"> Tests </a>
 </li>
 <li>
-<a href="#screenshots"> Screenshots </a>
+<a href="#screenshot-and-video"> Screenshot and Video </a>
 </li>
 </ol>
 
@@ -59,7 +59,7 @@ None
 Run the video\
 Page link: https://github.com/EliotCho/svg-logo-maker
 
-## Screenshots
+## Screenshot and Video
 
 The following image shows an example of svg logo file:
 
