@@ -22,7 +22,10 @@
 <a href="#tests"> Tests </a>
 </li>
 <li>
-<a href="#screenshot-and-video"> Screenshot and Video </a>
+<a href="#screenshot"> Screenshot</a>
+</li>
+<li>
+<a href="#video"> Video</a>
 </li>
 </ol>
 
@@ -59,12 +62,15 @@ None
 Run the video\
 Page link: https://github.com/EliotCho/svg-logo-maker
 
-## Screenshot and Video
+## Screenshot
 
 The following image shows an example of svg logo file:
 
 ![Example of the svg logo](./examples/logo.png)
 
-The following video shows the web application's appearance and functionality:\
-Click on the image below for a video to play \
+## Video
+
+The following video shows the walkthrough of the application functionality:\
+Click on the image below for a video to play! \
+This is NOT AN IMAGE!!! \
 [![Video of program](./examples/logo.png)](./assets/videos/svg-logo.mp4)
